@@ -1,0 +1,39 @@
+/* src/components/TopHeader.css */
+
+/* Styles for the new header with logo */
+.new-header {
+    background-color: #ffffff;
+    color: white;
+    padding:0px;
+    text-align: center;
+  }
+  
+  .new-header .logo {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+  }
+  
+  .new-header .logo img {
+    max-width: 150px; /* Adjust the maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Styles for the previous header with text */
+  .top-header {
+    background-color: #127ad0;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+  }
+  
+  .top-header .header-title {
+    margin: 5px 0; /* Adjust margin as needed */
+  }
+  
+  .header-title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  

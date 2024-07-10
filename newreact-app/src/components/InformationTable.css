@@ -1,0 +1,28 @@
+/* src/components/InformationTable.css */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  .info-table th, .info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .info-table th {
+    background-color: #f200f2;
+  }
+  
+  @media (max-width: 600px) {
+    .info-table th, .info-table td {
+      padding: 6px;
+    }
+  
+    .info-table {
+      font-size: 0.9rem;
+    }
+  }
+  

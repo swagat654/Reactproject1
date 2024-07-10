@@ -1,0 +1,19 @@
+/* src/components/MiddleHeader.css */
+.middle-header {
+    background-color:#127ad0 ;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 600px) {
+    .middle-header {
+      font-size: 0.9rem;
+      padding: 1px;
+      margin: 15px 0;
+    }
+  }
+  

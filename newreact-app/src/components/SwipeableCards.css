@@ -1,0 +1,80 @@
+.swipeable-cards {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card {
+  flex: 0 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px; /* Adjust width for desktop screens */
+  height: auto; /* Auto height to accommodate varying content */
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: center;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.card:hover {
+  transform: scale(1.0); /* Slight scale on hover */
+}
+
+.card-image {
+  display: block;
+  margin: 10px auto 0; /* Center image horizontally and add margin-top */
+  width: 150px; /* Fixed width for passport size */
+  height: 150px; /* Fixed height for passport size */
+  object-fit: cover; /* Ensure image covers the element */
+  border: 3px solid #58b0f3;
+}
+
+.card-content {
+  padding: 20px; /* Increased padding for better spacing */
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 1.5rem; /* Adjusted title font size for desktop */
+  color: #333;
+  border-bottom: 1px solid #ccc; /* Dividing line below the title */
+  padding-bottom: 10px; /* Padding below the title */
+}
+
+.card-content p {
+  font-size: 1.1rem; /* Adjusted description font size for desktop */
+  color: #000000;
+  margin: 0; /* Remove default margin */
+  line-height: 1.5; /* Added line height for better readability */
+  border-bottom: 1px solid #ccc; /* Dividing line below each description line */
+  padding-bottom: 20px; /* Padding below each description line */
+}
+
+@media (max-width: 600px) {
+  .swipeable-cards {
+    padding: 15px;
+  }
+
+  .card {
+    width: 80%; /* Manually adjusted width for smaller screens */
+    margin-right: 15px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}
